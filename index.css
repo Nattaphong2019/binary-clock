@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row {
+  display: flex;
+  margin-left: 100px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 20px;
+}
+
+.circle-blue {
+  background-color: aqua;
+}
