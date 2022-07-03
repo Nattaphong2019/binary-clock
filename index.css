@@ -14,7 +14,12 @@ body {
 
 .row {
   display: flex;
-  margin-left: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#col2{
+    margin-left: 100px;
 }
 
 .circle {
