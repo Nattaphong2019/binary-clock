@@ -22,7 +22,7 @@ const addClassCircleBlue = () => {
       let element = document
         .getElementsByClassName("col")
         [i].getElementsByClassName("circle")[j];
-      if (time == 1) {
+      if (time == 1 && element != undefined) {
         element.classList.add("circle-blue");
       } else {
         element.classList.remove("circle-blue");
