@@ -13,16 +13,16 @@ const getCurrentTime = () => {
   return `${hours}${minutes}${seconds}`;
 };
 
-const addClassCircleBlue = () => {
+const addAndRemoveClassCircleBlue = () => {
   const binaryTimes = convertTimeToBinary(getCurrentTime());
   for (let i = 0; i < 6; i++) {
     const times = binaryTimes[i].split("");
     for (let j = 0; j < 4; j++) {
-      const time = times[j].split("");
+      let time = times[j].toString();
       let element = document
         .getElementsByClassName("col")
         [i].getElementsByClassName("circle")[j];
-      if (time == 1 && element != undefined) {
+      if (time === "1" && element != undefined) {
         element.classList.add("circle-blue");
       } else {
         element.classList.remove("circle-blue");
@@ -32,5 +32,5 @@ const addClassCircleBlue = () => {
 };
 
 setInterval(function () {
-  addClassCircleBlue();
+  addAndRemoveClassCircleBlue();
 }, 1000);
